@@ -1,10 +1,14 @@
-HemoMap v.10
+HemoMap v1.0
 Tristan Colombo <tristan.colombo@info2dev.com>
 Licence GPL v3
 
 ----------------------------------------------
 
 Le code de l'application se trouve dans assets/www
+Les données sont stockées au format JSON dans le
+fichier data.js
+
 La documentation se trouve dans doc/
+
 Les directives de compilation et installation sur
 smartphone se trouvent dans le fichier INSTALL
