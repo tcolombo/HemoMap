@@ -1,0 +1,13 @@
+MODE DEBUG
+ant debug
+adb install bin/HemoMap-debug.apk
+
+MODE RELEASE
+ant release
+Spécifier le mot de passe de la keystore
+adb install bin/HemoMap-release.apk
+
+EN CAS DE PROBLEME AVEC LE SERVEUR :
+adb kill-server
+sudo adb start-server
+adb devices # pour vérifier
