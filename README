@@ -4,6 +4,11 @@ Licence GPL v3
 
 ----------------------------------------------
 
+Ce projet utilise le bridging framework Phonegap
+qui est disponible sous licence BSD
+Pour faciliter le développement, le fichiers du
+framework ont été inclus dans les sources.
+
 Le code de l'application se trouve dans assets/www
 Les données sont stockées au format JSON dans le
 fichier data.js
