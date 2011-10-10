@@ -330,6 +330,14 @@ crth = [
     'valid'     : false,
     'tel_day'   : '0495299063',
     'tel_night' : ''
+  },
+  {
+    'name'      : 'Hôpital Felix-Guyon',
+    'adress'    : 'Allée des Topazes, 97400 Saint-Denis',
+    'latitude'  : -20.8940075,
+    'longitude' : 55.4442384,
+    'valid'     : false,
+    'tel_day'   : '0262905050',
+    'tel_night' : ''
   }
-
 ]
