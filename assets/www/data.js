@@ -67,7 +67,7 @@ crth = [
     'latitude'  : 43.2916193,
     'longitude' : 5.4030712,
     'valid'     : true,
-    'tel_day'   : '0491386049',
+    'tel_day'   : '0491387749',
     'tel_night' : '0491386782'
   },
   {
