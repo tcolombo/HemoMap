@@ -1,13 +1,23 @@
-MODE DEBUG
-ant debug
-adb install bin/HemoMap-debug.apk
+# Mode debug
+cordova/debug
 
-MODE RELEASE
-ant release
-Spécifier le mot de passe de la keystore
-adb install bin/HemoMap-release.apk
-
-EN CAS DE PROBLEME AVEC LE SERVEUR :
+# En cas de problème avec le serveur :
 adb kill-server
 sudo adb start-server
 adb devices # pour vérifier
+
+
+
+
+# Production
+ant release
+
+# Signer avec passphrase = f.......
+jarsigner -keystore info2dev.keystore bin/HemoMap-release-unsigned.apk info2dev
+
+# Optimisation du paquetage
+zipalign -v 4 bin/HemoMap-release-unsigned.apk bin/HemoMap.apk
+
+# Pour tester le paquetage
+emulator -wipe-data -avd default &
+adb install bin/HemoMap.apk

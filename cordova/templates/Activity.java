@@ -1,17 +1,15 @@
-package com.info2dev.HemoMap;
+package __ID__;
 
 import android.app.Activity;
 import android.os.Bundle;
 import org.apache.cordova.*;
 
-public class HemoMap extends DroidGap
+public class __ACTIVITY__ extends DroidGap
 {
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        // Ajout d'un splash screen à la place de l'écran blanc
-        super.setIntegerProperty("splashscreen", R.drawable.splash);
         super.loadUrl("file:///android_asset/www/index.html");
     }
 }

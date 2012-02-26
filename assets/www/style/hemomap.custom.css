@@ -1,0 +1,51 @@
+.ui-icon, .ui-icon-searchfield:after 
+{
+  background: #666;
+  background: rgba(0,0,0,.4);
+  background-image: url(images/icons-18-hemomap-white.png);
+  background-repeat: no-repeat;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.ui-icon-alt 
+{
+  background: #fff;
+  background: rgba(255,255,255,.3);
+  background-image: url(images/icons-18-hemomap-black.png);
+  background-repeat: no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 240dpi) 
+{
+  .ui-icon-hemomap-day, .ui-icon-hemomap-night
+  {
+    background-image: url(images/icons-36-hemomap-white.png);
+    -moz-background-size: 36px 18px;
+    -o-background-size: 36px 18px;
+    -webkit-background-size: 36px 18px;
+    background-size: 36px 18px;
+  }
+  .ui-icon-alt 
+  {
+    background-image: url(images/icons-36-hemomap-black.png);
+  }
+}
+
+.ui-icon-hemomap-day 
+{
+  background-position: 0 50%;
+}
+
+.ui-icon-hemomap-night 
+{
+  background-position: -18px 50%;
+}
+
+.center
+{
+  text-align: center;
+}

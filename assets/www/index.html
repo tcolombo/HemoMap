@@ -1,26 +1,50 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+
+<html lang="fr">
   <head>
-    <meta name="viewport" content="width=320; user-scalable=no" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="info2dev - Tristan Colombo - http://www.info2dev.com" />
+    <meta name="viewport" content="width=device-width; user-scalable=no" />
+    <meta charset="utf-8">
     <title>HemoMap</title>
-    <link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8" />
-    <script type="text/javascript" charset="utf-8" src="data.js"></script>
-    <script type="text/javascript" charset="utf-8" src="phonegap.0.9.4.js"></script>
-    <script type="text/javascript" charset="utf-8" src="main.js"></script>  
+    <link rel="stylesheet" href="style/hemomap.min.css" />
+    <link rel="stylesheet" href="style/hemomap.custom.css" />
+    <link rel="stylesheet" href="style/jquery.mobile.structure-1.0.1.min.css" />
+    <script src="js/cordova-1.4.1.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.mobile-1.0.1.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
   </head>
+  
+  <body>
+    <div data-role="page" data-theme="a">
+      <div data-role="header" data-position="inline">
+	<h1>HemoMap</h1>
+      </div>
+ 
+      <div data-role="content" data-theme="a">
+        <p>
+          <h4 class="center">
+            <span id="crth">Géolocalisation en cours...</span>
+          </h4>
+          <h4 class="center">
+            <span id="crth_adress" class="center"> &nbsp;</span>
+          </h4>
+          <h4 class="center">
+            <span id="distance" class="center"> &nbsp;</span>
+          </h4>
+        </p>
+        <a id="info_crth" href="#" data-role="button">Trajet</a>
 
-  <body onload="init();" id="stage" class="theme">
-    <h1 class="fancy">HemoMap</h1>
-    <a id="info_crth" href="" class="btn large info">
-        <h2><span id="crth"> Géolocalisation en cours...</span></h2>
-        <h2><span id="crth_adress"> &nbsp;</span></h2>
-        <h2><span id="distance"> &nbsp;</span></h2>
-    </a>
-
-    <a id="phone_1" href="" class="btn large"><span class="icon day"></span><span id="phone_day" class="phone">&nbsp;</span></a>
+        <br />
+        
+        <a id="phone_1" href="#" data-role="button" data-icon="hemomap-day">
+          <span id="phone_day" class="phone">&nbsp;</span>
+        </a>
     
-    <a id="phone_2" href="" class="btn large"><span class="icon night"></span><span id="phone_night" class="phone">&nbsp;</span></a>
+        <a id="phone_2" href="#" data-role="button" data-icon="hemomap-night">
+          <span id="phone_night" class="phone">&nbsp;</span>
+        </a>
+      </div>
+    </div>
   </body>
 </html>
