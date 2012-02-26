@@ -12,4 +12,19 @@ Les données sont stockées au format JSON dans le fichier data.js
 
 La documentation se trouve dans doc/
 
-Les directives de compilation et installation sur smartphone se trouvent dans le fichier INSTALL
+Directives de compilation et installation sur smartphone :
+- Mode debug
+  cordova/debug
+
+- Production
+  ant release
+
+  Signer :
+  jarsigner -keystore key.keystore bin/HemoMap-release-unsigned.apk alias
+
+  Optimisation du paquetage
+  zipalign -v 4 bin/HemoMap-release-unsigned.apk bin/HemoMap.apk
+
+  Pour tester le paquetage
+  emulator -wipe-data -avd default &
+  adb install bin/HemoMap.apk
